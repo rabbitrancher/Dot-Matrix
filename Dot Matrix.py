@@ -70,7 +70,7 @@ def clearMatrix(matrix, seqX, seqY):
     for nucleotideIndexY in range(len(seqY)):
         matrix[nucleotideIndexY + 1][0] = seqY[nucleotideIndexY] # sets the first column (offset by 1 from the top) to be the value of each nucleotide for the y sequence
     
-#TODO fix this
+#TODO fix this to explain what it's doing when an even window is provided
 def checkWindow(matrix, windowSize, mismatchLimit, row, col):
     buffer = windowSize // 2
     mismatches = 0
